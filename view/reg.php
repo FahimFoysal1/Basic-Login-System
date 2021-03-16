@@ -1,7 +1,7 @@
 <?php
     session_start();
     
-    if($_SESSION["is_logged"]){
+    if(isset($_SESSION['is_logged']) && $_SESSION["is_logged"]){
 
         header("Location: index.php");
         exit();
@@ -20,6 +20,11 @@
 </head>
 
 <body>
+
+    <?php
+        include 'nav.php';
+    ?>
+
     <div class="regform">
         <h1>Registration Form</h1>
     </div>

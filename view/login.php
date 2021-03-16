@@ -25,14 +25,19 @@
 </head>
 
 <body>
+
+    <?php
+        include 'nav.php';
+    ?>
+
     <div class="login_form">
         <div class="form_title">
             <h1>Login</h1>
         </div>
 
         <?php
-            if (isset($_SESSION['err_message'])) {
-                echo "<h4>". $_SESSION['err_message']."</h4>";
+            if (isset($_SESSION['login_err_message'])) {
+                echo "<h4>". $_SESSION['login_err_message']."</h4>";
             }
         ?>
 
