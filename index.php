@@ -21,9 +21,15 @@
 </head>
 
 <body>
-
+    <?php
+        include 'nav.php';
+    ?>
+    
     <H1>My profile page</H1>
 
+    <button>
+        <a href="logout.php">Logout</a>
+    </button>
 </body>
 
 </html>
